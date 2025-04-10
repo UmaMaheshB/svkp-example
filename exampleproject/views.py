@@ -16,3 +16,11 @@ def svkp(request):
 	</body>
 	'''
 	return HttpResponse(html)
+
+def goodevening(request, college):
+	html = f'''
+	<body>
+	<marquee>Good Evening: {college}</marquee>
+	</body>
+	'''
+	return HttpResponse(html)

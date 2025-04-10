@@ -17,10 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
-
+from .views import goodevening
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('hello/', views.hello),
     path('goodmorning/', views.goodmorning),
     path('svkp/', views.svkp),
+    path('good-evening/<str:college>', goodevening)
 ]
