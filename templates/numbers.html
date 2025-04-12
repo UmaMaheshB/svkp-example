@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.red{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<table border="2">
+	{% for tuple in data %}
+		<tr>
+			{% for col in tuple %}
+				<td class="red"> {{ col }} </td>
+			{% endfor %}
+		</tr>
+	{% endfor %}
+</table>
+</body>
+</html>
