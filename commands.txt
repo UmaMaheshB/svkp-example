@@ -1,0 +1,9 @@
+09-04-2025
+cd /svkp
+django-admin startproject exampleproject
+cd /svkp/exampleproject
+python manage.py runserver
+
+12-04-2025
+cd /svkp/exampleproject
+django-admin startapp svkp
