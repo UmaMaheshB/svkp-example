@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-	<h2> Total Branches: {{ branches | length }}</h2>
-	<ol class="list-group">
-		{% for branch in branches %}
-			{# this is the upper filter #}
-			<li class="list-group-item"> {{ branch | upper }} </li>
-		{% endfor %}
-	</ol>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block 'content' %}
+<h2> Total Branches: {{ branches | length }}</h2>
+<ol class="list-group">
+	{% for branch in branches %}
+		{# this is the upper filter #}
+		<li class="list-group-item"> {{ branch | upper }} </li>
+	{% endfor %}
+</ol>
+{% endblock %}

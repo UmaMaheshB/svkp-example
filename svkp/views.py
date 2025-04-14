@@ -11,4 +11,4 @@ def branches(request):
 	return render(request, "branches_list.html", {"branches": temp})
 
 def address(request):
-	return HttpResponse("penugonda")
+	return render(request, "address.html")

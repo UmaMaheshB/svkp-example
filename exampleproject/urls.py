@@ -20,6 +20,7 @@ from . import views
 from .views import goodevening
 urlpatterns = [
     # path('admin/', admin.site.urls),
+    path('', views.home),
     path('hello/', views.hello),
     path('goodmorning/', views.goodmorning),
     path('svkp/', include('svkp.urls')),
