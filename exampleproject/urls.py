@@ -26,4 +26,5 @@ urlpatterns = [
     path('svkp/', include('svkp.urls')),
     path('good-evening/<str:college>', goodevening),
     path('numbers/<int:rows>/<int:cols>/', views.numbers),
+    path('weather/', views.weather),
 ]
